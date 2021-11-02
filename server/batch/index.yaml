@@ -1,0 +1,9 @@
+indexes:
+- kind: media_tweets
+  properties:
+  - name: created_date
+    direction: desc
+  - name: user_id
+  - name: user_screen_name
+  - name: media_type
+  - name: category

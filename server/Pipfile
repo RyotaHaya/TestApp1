@@ -1,0 +1,30 @@
+[[source]]
+url = "https://pypi.org/simple"
+verify_ssl = true
+name = "pypi"
+
+[packages]
+tweepy = "*"
+pandas = "*"
+python-dotenv = "*"
+requests = "*"
+numpy = "*"
+opencv-python = "*"
+starlette = "==0.13"
+beautifulsoup4 = "*"
+snscrape = "*"
+responder = "==2.0.7"
+typesystem = "==0.2.5"
+opencv-contrib-python = "*"
+
+[dev-packages]
+
+[requires]
+python_version = "3.9"
+
+[pipenv]
+allow_prereleases = false
+
+[scripts]
+dev="uvicorn --host=0.0.0.0 --port=5042 --debug --log-level=debug api:api"
+prod="uvicorn --host=0.0.0.0 --port=5042 api:api"
